@@ -8,6 +8,7 @@
  ### a. về phần menu game:
     - menu cơ bản có 2 nút là 'new game' và 'score'
     - có hiệu ứng và âm thanh khi chuột di chuyển vào và bấm vào các nút
+    - có nút tắt/bật tiếng
   ### b. về phần new game:
     - trước khi vào game người chơi sẽ được nhập tên của mình để luu thồng tin cho phần score, nếu người chơi để tên rỗng thì sẽ tự động được lưu là 'player'
     - phần nhập tên có nút 'back' và nút 'enter', nếu bấm vào nút 'back' sẽ được đưa trở về phần menu. Còn nếu bấm vào nút 'enter' hoặc nhấn enter người chơi sẽ được đưa vào phần game
@@ -31,7 +32,6 @@
   - tự code và thiết kế game
   - về hướng phát triển: 
       + có thêm chức năng đo thời gian, xếp hạng người chơi theo thời gian, theo level
-      + có thêm chức năng cài đặt (tắt/bật tiếng) cho game
       + nâng cấp độ họa và animation cho game
   - kinh nghiệm rút ra:
       + được tìm hiểu và tự làm 1 game đơn giản
