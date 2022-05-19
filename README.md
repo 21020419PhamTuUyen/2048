@@ -13,7 +13,8 @@
     - phần nhập tên có nút 'back' và nút 'enter', nếu bấm vào nút 'back' sẽ được đưa trở về phần menu. Còn nếu bấm vào nút 'enter' hoặc nhấn enter người chơi sẽ được đưa vào phần game
     - hướng dẫn chơi: sử dụng các nút awds để di chuyển các ô số mỗi khi ô số giống nhau thì sẽ được cộng dồn
     - trong phần game cũng có nút 'back' để trở lại menu, nếu người chơi bấm thoát ra hoặc trở lại trong quá trình này game sẽ lưu lại điểm hiện tại của người chơi và được sắp xếp theo thứ tự điểm trong file 'score_list.txt'
-    - ở trong phần chơi game có 1 chức năng nhấn 'u' để đưa các ô số về lại chỗ trước 1 lần
+    - sau khi nhập xong tên, người chơi sẽ đến trang để chọn level, gồm có 3 level tương ứng với size của bảng game là 4,5 và 6. Tương ứng với mức độ được tăng cao thì con số để win cũng lớn hơn từ 2048 -> 8192.
+    - ở trong phần chơi game có 1 chức năng nhấn 'u' để quay lại 1 bước
     - trong các quá trình trên các nút bấm và di chuyển các ô số đều có âm thanh
   c. về phần score:
     - là bảng xếp hàng top 10 người có điểm số cao nhất được xếp theo thứ tự từ cao xuống thấp.
@@ -26,14 +27,14 @@
   - các thuật toán để vẽ bảng, các ô số, thuật toán để di chuyển và cộng dồn các ô số
 5. kết luận
   - em đã tìm hiểu và tiếp thu kiến thức về SDL2 tại:[ lazyfoo.net/tutorials/SDL/](https://lazyfoo.net/tutorials/SDL/)
-  - tham khảo cách thức hoạt động của game từ nhiều nguồn trên mạng
+  - cơ chế hoạt động được lấy ý tưởng từ trên mạng
   - tự code và thiết kế game
   - về hướng phát triển: 
-      + mở thêm chế độ game cho phép lựa chọn kích thước của bảng
-      + có thêm chức năng cài đặt cho game
+      + có thêm chức năng đo thời gian, xếp hạng người chơi theo thời gian, theo level
+      + có thêm chức năng cài đặt (tắt/bật tiếng) cho game
       + nâng cấp độ họa và animation cho game
   - kinh nghiệm rút ra:
       + được tìm hiểu và tự làm 1 game đơn giản
-      + có kĩ năng cơ bản về tạo project nhỏ và lập trình trên vs code
-      + thêm được một chút thông tin về cách sử dụng github
-      + nhược điểm về lập trình hướng đối tượng (phần main còn khá dài do em chưa biết chia nhỏ đối tượng ra sao cho phù hợp)
+      + biết về cách tạo project và lập trình trên vs code
+      + tìm hiểu và biết thêm về github
+      + biết về lập trình độ họa SDL2
