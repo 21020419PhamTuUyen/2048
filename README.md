@@ -4,7 +4,7 @@
   - ở phần terminal gõ lệnh 'make' và './main.exe'
 2. mô tả:
   về game 2048, là một loại game cổ điển mà trong đó người chơi sẽ di chuyển các ô số (bắt đầu từ 2), các ô có số giống nhau sẽ cộng dồn lên, nhiệm vụ của ngừoi chơi là di chuyển sao cho các ô só cộng dồn được đến 2048. Game sẽ kết thúc nếu các ô số đã bịt kín các ô trong bảng và không thể di chuyển các ô số được nữa.
-3. các chúc năng có trong game:
+3. các chúc năng có trong game: 
   a. về phần menu game:
     - menu cơ bản có 2 nút là new game và score
     - có hiệu ứng và âm thanh khi chuột di chuyển vào và bấm vào các nút
