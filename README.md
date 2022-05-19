@@ -13,6 +13,7 @@
     - phần nhập tên có nút 'back' và nút 'enter', nếu bấm vào nút 'back' sẽ được đưa trở về phần menu. Còn nếu bấm vào nút 'enter' hoặc nhấn enter người chơi sẽ được đưa vào phần game
     - hướng dẫn chơi: sử dụng các nút awds để di chuyển các ô số mỗi khi ô số giống nhau thì sẽ được cộng dồn
     - trong phần game cũng có nút 'back' để trở lại menu, nếu người chơi bấm thoát ra hoặc trở lại trong quá trình này game sẽ lưu lại điểm hiện tại của người chơi và được sắp xếp theo thứ tự điểm trong file 'score_list.txt'
+    - ở trong phần chơi game có 1 chức năng nhấn 'u' để đưa các ô số về lại chỗ trước 1 lần
     - trong các quá trình trên các nút bấm và di chuyển các ô số đều có âm thanh
   c. về phần score:
     - là bảng xếp hàng top 10 người có điểm số cao nhất được xếp theo thứ tự từ cao xuống thấp.
