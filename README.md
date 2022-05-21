@@ -12,7 +12,7 @@
   ### b. về phần new game:
     - trước khi vào game người chơi sẽ được nhập tên của mình để luu thồng tin cho phần score, nếu người chơi để tên rỗng thì sẽ tự động được lưu là 'player'
     - phần nhập tên có nút 'back' và nút 'enter', nếu bấm vào nút 'back' sẽ được đưa trở về phần menu. Còn nếu bấm vào nút 'enter' hoặc nhấn enter người chơi sẽ được đưa vào phần game
-    - hướng dẫn chơi: sử dụng các nút awds để di chuyển các ô số mỗi khi ô số giống nhau thì sẽ được cộng dồn
+    - hướng dẫn chơi: sử dụng các nút 'awds' hoặc các phím di chuyển để di chuyển các ô số mỗi khi ô số giống nhau thì sẽ được cộng dồn
     - trong phần game cũng có nút 'back' để trở lại menu, nếu người chơi bấm thoát ra hoặc trở lại trong quá trình này game sẽ lưu lại điểm hiện tại của người chơi và được sắp xếp theo thứ tự điểm trong file 'score_list.txt'
     - sau khi nhập xong tên, người chơi sẽ đến trang để chọn level, gồm có 3 level tương ứng với size của bảng game là 4,5 và 6. Tương ứng với mức độ được tăng cao thì con số để win cũng lớn hơn từ 2048 -> 8192.
     - ở trong phần chơi game có 1 chức năng nhấn 'u' để quay lại 1 bước
