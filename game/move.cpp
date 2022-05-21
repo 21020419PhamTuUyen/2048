@@ -142,10 +142,10 @@ void move(SDL_Event event, int **&tab, int size, int **&backtab, unsigned int &s
 	
 
 
-	if (event.key.keysym.sym == SDLK_w) moveTop(tab, size, score);
-	else if (event.key.keysym.sym == SDLK_s) moveBot(tab, size, score);
-	else if (event.key.keysym.sym == SDLK_a) moveLeft(tab, size, score);
-	else if (event.key.keysym.sym == SDLK_d) moveRight(tab, size, score);
+	if (event.key.keysym.sym == SDLK_w || event.key.keysym.sym == SDLK_UP) moveTop(tab, size, score);
+	else if (event.key.keysym.sym == SDLK_s || event.key.keysym.sym == SDLK_DOWN) moveBot(tab, size, score);
+	else if (event.key.keysym.sym == SDLK_a || event.key.keysym.sym == SDLK_LEFT) moveLeft(tab, size, score);
+	else if (event.key.keysym.sym == SDLK_d || event.key.keysym.sym == SDLK_RIGHT) moveRight(tab, size, score);
 
 	if (checkToRandom(tab, backtab, size)) {
 		randomOnBoard(tab, size);

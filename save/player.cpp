@@ -45,8 +45,10 @@ void makelist(std::vector<Player> &list){
         std::getline(file,name,',');
         if(name[0]<32)name.erase(0,1);
         file>>score;
-        Player player(name,score);
-        list.push_back(player);
+        if(name!=""){
+            Player player(name,score);
+            list.push_back(player);
+        }
     }
     file.close();
 }

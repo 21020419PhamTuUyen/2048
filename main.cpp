@@ -210,12 +210,12 @@ int main(int argc, char **argv){
                 if(event.key.keysym.sym == SDLK_RETURN){
                     status = 4;
                 }
-                else if(event.key.keysym.sym == SDLK_RIGHT){
+                else if(event.key.keysym.sym == SDLK_RIGHT || event.key.keysym.sym == SDLK_d){
                     Mix_PlayChannel(-1,Sound.click,0);
                      i++;
                      if(i==3) i=2;
                 }
-                else if(event.key.keysym.sym == SDLK_LEFT){
+                else if(event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_a){
                     Mix_PlayChannel(-1,Sound.click,0);
                      i--;
                     if(i==-1) i=0;
@@ -253,7 +253,8 @@ int main(int argc, char **argv){
         while(SDL_PollEvent(&event)){
             switch(event.type) {
 				case SDL_KEYDOWN:
-                    if (event.key.keysym.sym == SDLK_w || event.key.keysym.sym == SDLK_s || event.key.keysym.sym == SDLK_a || event.key.keysym.sym == SDLK_d)
+                    if (event.key.keysym.sym == SDLK_w || event.key.keysym.sym == SDLK_s || event.key.keysym.sym == SDLK_a || event.key.keysym.sym == SDLK_d
+                        || event.key.keysym.sym == SDLK_LEFT || event.key.keysym.sym == SDLK_RIGHT || event.key.keysym.sym == SDLK_UP || event.key.keysym.sym == SDLK_DOWN)
                             move(event, tab, Size[i], backtab, score, backscore,Sound.Move);
 
                     else if (event.key.keysym.sym == SDLK_u) { 
