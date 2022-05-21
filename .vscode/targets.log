@@ -1,0 +1,315 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-pc-mingw32
+ 
+
+# Make data base, printed on Sat May 21 17:32:39 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR := f:/2048/2048
+# default
+SHELL := sh.exe
+# environment
+WINDIR = C:\windows
+# environment
+VS 
+CODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVE = C:\Users\Admin\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from `makefile', line 1)
+MAKEFILE_LIST :=  makefile
+# environment
+TMP = C:\Users\Admin\AppData\Local\Temp
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-a7853b6e-96dc-47b9-9a02-6e1e63a4cbc5-sock
+# environment
+VSCODE_CWD = F:\download\Microsoft VS Code
+# environment
+PATH = C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\MinGW\bin;F:\devc++\Git\cmd;F:\cmake-3.23.0-rc4-windows-x86_64\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Users\Admin\AppData\Local\Microsoft\WindowsApps;;F:\download\Microsoft VS Code\bin
+# environment
+ONLINESERVICES = Online Services
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# environment
+ZES_ENABLE_SYSMAN = 1
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+USERPROFILE = C:\Users\Admin
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# makefile (from `makefile', line 2)
+LIBFLAGS = -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+# environment
+VSCODE_LOG_STACK = false
+# environment
+NUMBER_OF_PROCESSORS = 8
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion e 
+lse-if archives
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8076_UMKKKGMDTQSRKTWR
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+COMPUTERNAME = LAPTOP-TQI48H9D
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = Admin
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\Admin\AppData\Roaming\Code\CachedData\c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# environment
+LOGONSERVER = \\LAPTOP-TQI48H9D
+# environment
+ONEDRIVECONSUMER = C:\Users\Admin\OneDrive
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = LAPTOP-TQI48H9D
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# default
+MAKE_VERSION := 3.81
+# makefile
+.DEFAULT_GOAL := all
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LOCALAPPDATA = C:\Users\Admin\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $* 
+)
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\1fa9692ca970862365dc969f915639a2-1.67.2-main-sock
+# environment
+HOMEPATH = \Users\Admin
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+REGIONCODE = APJ
+# environment
+SYSTEMROOT = C:\windows
+# automatic
++D = 
+ $(patsubst %/,%,$(dir $+))
+# environment
+PLATFORMCODE = KV
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\Admin\AppData\Roaming
+# environment
+TEMP = C:\Users\Admin\AppData\Local\Temp
+# environment
+COMSPEC = C:\windows\system32\cmd.exe
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 8c01
+# environment
+MOZ_PLUGIN_PATH = C:\Program Files (x86)\Foxit Software\Foxit Reader\plugins\
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+VSCODE_PID = 8076
+# environment
+USERDOMAIN_ROAMINGPROFILE = LAPTOP-TQI48H9D
+# variable set hash-table stats:
+# Load=93/1024=9%, Rehash=0, Collisions=9/125=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# : could not be stat'd.
+# F:\cmake-3.23.0-rc4-windows-x86_64\bin (key F:/cmake-3.23.0-rc4- 
+windows-x86_64/bin, mtime 1647568866): 7 files, no impossibilities.
+# C:\Users\Admin\AppData\Local\Microsoft\WindowsApps (key C:/Users/Admin/AppData/Local/Microsoft/WindowsApps, mtime 1651118710): 22 files, no impossibilities.
+# C:\windows\System32\WindowsPowerShell\v1.0\ (key C:/windows/System32/WindowsPowerShell/v1.0/, mtime 1622898672): 30 files, no impossibilities.
+# C:\windows\System32\Wbem (key C:/windows/System32/Wbem, mtime 1652450008): 154 files, no impossibilities.
+# . (key f:/2048/2048, mtime 165 
+3126591): 39 files, no impossibilities.
+# C:\MinGW\bin (key C:/MinGW/bin, mtime 1647690132): 147 files, no impossibilities.
+# C:\windows\System32\OpenSSH\: could not be stat'd.
+# F:\download\Microsoft VS Code\bin (key F:/download/Microsoft VS Code/bin, mtime 1652929145): 4 files, no impossibilities.
+# C:\windows (key C:/windows, mtime 1652450067): 129 files, no impossibilities.
+# F:\devc++\Git\cmd (key F:/devc++/Git/cmd, mtime 1645897568): 8 files, no impossibilities.
+# C:\windows\system32 (key C:/windows/s 
+ystem32, mtime 1652450503): 2894 files, no impossibilities.
+# C:\Program Files (x86)\GnuWin32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1647690271): 5 files, no impossibilities.
+
+# 3439 files, no impossibilities in 13 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+all:
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := all
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/20=5%
+#  commands to execute (from `makefile', line 4):
+	g++ -Isrc/include -Lsrc/lib -c main.cpp $(LIBFLAGS)
+	g++ -Isrc/include -Lsrc/lib -c game/botton.cpp $(LIBFLAGS)
+	g++ -Isrc/include -Lsrc/lib -c game/draw.cpp $(LIBFLAGS)
+	g++ -Isrc/include -Lsrc/lib -c game/gameplay.cpp $(LIBFLAGS)
+	g++ -Isrc/include -Lsrc/lib -c game/mouse.cpp $(LIBFLAGS)
+	g++ -Isrc/include -Lsrc/lib -c game/move.cpp $(LIBFLAGS)
+	g++ -Isrc/include -Lsrc/lib -c game/LoadImage.cpp $(LIBFLAGS)
+	g++ -Isrc/include -Lsrc/lib -c game/sound.cpp $(LIBFLAGS)
+	g++ -Isrc/include -Lsrc/lib -c save/player.cpp $(LIBFLAGS)
+	g++ -Isrc/include -Lsrc/lib main.o botton.o draw.o gameplay.o mouse.o move.o LoadImage.o sound.o player.o -o main $(LIBFLAGS)
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never c 
+hecked.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-21 16:05:43
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=4/1024=0%, Rehash=0, Collisions=0/17=0%
+# VPATH Search Paths
+
+# No `vpat 
+h' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Sat May 21 17:32:39 2022
+
+ 

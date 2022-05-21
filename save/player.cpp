@@ -18,8 +18,10 @@ void Player :: save(){
         if(s[0]<32) s.erase(0,1);
         file>>k;
         if(k<score) break;
-        if(s!="")
-        fi<<s<<","<<k<<std::endl;
+        else {
+            if(s!="") //this condition is to fix open file bug (even though there is nothing in file, but this loop still runs)
+            fi<<s<<","<<k<<std::endl;     
+        }
     }
     fi<<name<<","<<score<<std::endl;
     while(!file.eof()){
@@ -41,7 +43,7 @@ void makelist(std::vector<Player> &list){
         std::string name;
         unsigned int score;
         std::getline(file,name,',');
-        name.erase(0,1);
+        if(name[0]<32)name.erase(0,1);
         file>>score;
         Player player(name,score);
         list.push_back(player);

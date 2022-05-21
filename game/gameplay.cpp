@@ -1,6 +1,6 @@
 #include"gameplay.h"
 
-//get the color of the pixel that contain this number(x)
+//get the color of the pixel that contain the number(x)
 int get_power(int x) {
 	int n = 0;
 	while (x != 0) {

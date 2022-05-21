@@ -24,7 +24,10 @@ SDL_Surface* screen,*charset;
 SDL_Renderer* renderer;
 SDL_Texture *scrtex;
 
-unsigned int score = 0,backscore = 0;
+unsigned int score,backscore;
+std::string name;
+Player player(name,score);
+int** tab,**backtab;
 
 void load_on_screen(){
         SDL_UpdateTexture(scrtex, NULL, screen->pixels, screen->pitch);
@@ -77,6 +80,7 @@ int main(int argc, char **argv){
     int status = 1;
     while(running)
     {
+    
     SDL_Event event;
     //menu
     while(status == 1){
@@ -90,14 +94,17 @@ int main(int argc, char **argv){
             botton new_game(SCREEN_WIDTH/2-110,SCREEN_HEIGHT/2-50,200,50,screen,charset,"NEW GAME",white,black);
             new_game.draw_botton();
             //score botton
-            botton score(SCREEN_WIDTH/2-80,SCREEN_HEIGHT/2+10,130,50,screen,charset,"SCORE",white,black);
-            score.draw_botton();
+            botton Score(SCREEN_WIDTH/2-80,SCREEN_HEIGHT/2+10,130,50,screen,charset,"SCORE",white,black);
+            Score.draw_botton();
             //sound botton
             botton sound(500,0,70,70,screen,charset,"",black,black);
             load_on_screen();
             if(event.type == SDL_MOUSEMOTION ){
                 if(mouse_in_botton(new_game)){
                     if(mouse_touch_botton(new_game)){
+                        score=0;
+                        backscore=0;
+                        name="";
                         Mix_PlayChannel(-1,Sound.motion,0);
                     }
                     new_game.fill_color = puple;
@@ -106,12 +113,12 @@ int main(int argc, char **argv){
                     
                 }
                    
-                if(mouse_in_botton(score)){
-                    if(mouse_touch_botton(score)){
+                if(mouse_in_botton(Score)){
+                    if(mouse_touch_botton(Score)){
                     Mix_PlayChannel(-1,Sound.motion,0);
                     }
-                    score.fill_color = puple;
-                    score.draw_botton();
+                    Score.fill_color = puple;
+                    Score.draw_botton();
                     load_on_screen();
                 }
                 
@@ -121,9 +128,9 @@ int main(int argc, char **argv){
                     Mix_PlayChannel(-1,Sound.click,0);
                     status = 2;
                 }
-                else if(mouse_in_botton(score)){
+                else if(mouse_in_botton(Score)){
                     Mix_PlayChannel(-1,Sound.click,0);
-                    status = 4;
+                    status = 5;
                 }
                 else if(mouse_in_botton(sound)){
                     if(!sound_on) {
@@ -144,8 +151,6 @@ int main(int argc, char **argv){
        }
     }
 
-    std :: string name="";
-    Player player(name,score);
     botton back(0,0,180,50,screen,charset,"<-BACK",black,black);
     botton enter(450,0,180,50,screen,charset,"ENTER->",black,black);
     while(status == 2){
@@ -171,6 +176,8 @@ int main(int argc, char **argv){
                     status = 1;
                 }
                 else if(mouse_in_botton(enter)){
+                    if(name=="") name = "player";
+                    player.name = name;
                     Mix_PlayChannel(-1,Sound.click,0);
                     status = 3;
                 }
@@ -181,7 +188,6 @@ int main(int argc, char **argv){
             }
             else if(event.type == SDL_TEXTINPUT){
                 name+=event.text.text;
-
             }
 
         }  
@@ -193,7 +199,7 @@ int main(int argc, char **argv){
         SDL_FillRect(screen,NULL,black);
         back.draw_botton();
         enter.draw_botton();
-        DrawString(screen,30,200,"chose your level:",charset);
+        DrawString(screen,30,200,"chose board's size:",charset);
         sprintf(level,"<- %d ->",Size[i]);
         DrawString(screen,230,250,level,charset);
         while(SDL_PollEvent(&event)){
@@ -221,6 +227,9 @@ int main(int argc, char **argv){
                     status = 1;
                 }
                 else if(mouse_in_botton(enter)){
+                    tab = createtab(Size[i]);
+                    backtab = createtab(Size[i]);
+                    copyTab(tab,backtab,Size[i]);
                     Mix_PlayChannel(-1,Sound.click,0);
                     status = 4;
                 }
@@ -230,10 +239,7 @@ int main(int argc, char **argv){
     }
 
     //game start
-    int** tab,**backtab;
-    tab = createtab(Size[i]);
-    backtab = createtab(Size[i]);
-    copyTab(tab,backtab,Size[i]);
+
     while(status == 4){
         if(!checkLose(tab,Size[i])  && !checkWin(tab,Size[i],max[i])){
 
@@ -258,6 +264,7 @@ int main(int argc, char **argv){
                     break;
                 case SDL_MOUSEBUTTONDOWN:  
                     if(mouse_in_botton(back)){
+                        player.score = score;
                         player.save();
                         Mix_PlayChannel(-1,Sound.click,0);
                         status = 1;    
@@ -303,8 +310,7 @@ int main(int argc, char **argv){
         SDL_FillRect(screen,NULL,black);
         DrawString(screen,170,100,"Highest score",charset);
         back.draw_botton();
-        std::vector<Player> list;
-        
+        std::vector<Player> list; 
         makelist(list);
         int lines = list.size();
         int x1=100,y1=180,x2=450,y2=180;
@@ -314,7 +320,7 @@ int main(int argc, char **argv){
             sprintf(k,"%d",list[i].score); 
             DrawString(screen,x2,y2,k,charset);
             y1+=24;y2+=24;
-            if(i==10) break;
+            if(i==9) break;
         }
         while(SDL_PollEvent(&event)){
             if(event.type == SDL_QUIT){
