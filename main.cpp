@@ -102,9 +102,6 @@ int main(int argc, char **argv){
             if(event.type == SDL_MOUSEMOTION ){
                 if(mouse_in_botton(new_game)){
                     if(mouse_touch_botton(new_game)){
-                        score=0;
-                        backscore=0;
-                        name="";
                         Mix_PlayChannel(-1,Sound.motion,0);
                     }
                     new_game.fill_color = puple;
@@ -125,6 +122,9 @@ int main(int argc, char **argv){
             }
             else if(event.type == SDL_MOUSEBUTTONDOWN){
                 if(mouse_in_botton(new_game)){
+                    score=0;
+                    backscore=0;
+                    name="";
                     Mix_PlayChannel(-1,Sound.click,0);
                     status = 2;
                 }
