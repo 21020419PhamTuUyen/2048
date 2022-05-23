@@ -19,7 +19,7 @@
     - trong các quá trình trên các nút bấm và di chuyển các ô số đều có âm thanh
   ### c. về phần score:
     - là bảng xếp hàng top 10 người có điểm số cao nhất được xếp theo thứ tự từ cao xuống thấp.
-   --->video minh họa: 
+   --->video minh họa: https://www.youtube.com/watch?v=-_0kHSrUfoQ
 ## 4. các kĩ thuật được sủ dụng:
   - một số thao tác của SDL cơ bản, có renderer vẽ nhưng thử cơ bản(nút bấm, ô số,...., có load hình ảnh (tiêu đề của game ở phần menu), có âm thanh (các nút bấm), có chính sửa về máu sắc sủ dụng (SDL_MapRGB), màu của các ô số đậm dần theo các số ở trên ô sô, có load texture theo kiểu bitmap (không cần sử dụng đên SDL_tff vẫn có thể vẽ được chữ và chỉnh font chữ) 
   - có chia file (theo chức năng)
