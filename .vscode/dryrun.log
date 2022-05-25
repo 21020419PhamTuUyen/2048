@@ -1,0 +1,14 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make.exe: Entering directory `f:/download/2048'
+g++ -Isrc/include -Lsrc/lib -c main.cpp -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+g++ -Isrc/include -Lsrc/lib -c game/botton.cpp -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+g++ -Isrc/include -Lsrc/lib -c game/draw.cpp -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+g++ -Isrc/include -Lsrc/lib -c game/gameplay.cpp -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+g++ -Isrc/include -Lsrc/lib -c game/mouse.cpp -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+g++ -Isrc/include -Lsrc/lib -c game/move.cpp -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+g++ -Isrc/include -Lsrc/lib -c game/LoadImage.cpp -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+g++ -Isrc/include -Lsrc/lib -c game/sound.cpp -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+g++ -Isrc/include -Lsrc/lib -c save/player.cpp -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+g++ -Isrc/include -Lsrc/lib main.o botton.o draw.o gameplay.o mouse.o move.o LoadImage.o sound.o player.o -o main -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+make.exe: Leaving directory `f:/download/2048'
+ 

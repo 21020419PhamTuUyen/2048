@@ -78,10 +78,11 @@ int main(int argc, char **argv){
 
     bool running = 1;
     int status = 1;
+
+    SDL_Event event;
     while(running)
     {
     
-    SDL_Event event;
     //menu
     while(status == 1){
         SDL_FillRect(screen,NULL,black);
