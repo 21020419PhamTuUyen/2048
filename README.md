@@ -31,7 +31,7 @@
   - cơ chế hoạt động được lấy ý tưởng từ trên mạng
   - tự code và thiết kế game
   - về hướng phát triển: 
-      + có thêm chức năng đo thời gian, xếp hạng người chơi theo thời gian, theo level
+      + rút gọn code
       + nâng cấp độ họa và animation cho game
   - kinh nghiệm rút ra:
       + được tìm hiểu và tự làm 1 game đơn giản
